@@ -27,15 +27,17 @@ class _StoryPageState extends State<StoryPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue.shade900,
+        centerTitle: true,
         title: Text(
           'Destni',
           style: TextStyle(
-            fontSize: 25),
+            fontSize: 25,
+            fontWeight: FontWeight.w700  ),
             textAlign: TextAlign.left,
             textWidthBasis: TextWidthBasis.longestLine,
           ),
           titleTextStyle: TextStyle(
-            color: Colors.red,
+            color: Colors.red.shade900,
             ),
           ),
       body: Container(
