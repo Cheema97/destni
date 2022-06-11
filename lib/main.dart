@@ -7,9 +7,10 @@ void main() => runApp(Destni());
 class Destni extends StatelessWidget {
   Widget build(BuildContext context){
     return MaterialApp(
+      title: 'Destni',
       theme:ThemeData.dark(),
       home:StoryPage(),
-      );
+    ); 
   }
 }
 
@@ -24,6 +25,19 @@ class _StoryPageState extends State<StoryPage> {
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue.shade900,
+        title: Text(
+          'Destni',
+          style: TextStyle(
+            fontSize: 25),
+            textAlign: TextAlign.left,
+            textWidthBasis: TextWidthBasis.longestLine,
+          ),
+          titleTextStyle: TextStyle(
+            color: Colors.red,
+            ),
+          ),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
